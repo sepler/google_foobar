@@ -5,7 +5,6 @@ def answer(l, t):
         for j in xrange(len(l)): # Iterate rest of indexi
             if j < i: # If index <= start
                 continue
-            print total
             total += l[j]
             if total == t:
                 possible.append({
@@ -13,7 +12,6 @@ def answer(l, t):
                 "end": j,
                 "length": j-i
                 })
-        print
 
     if not possible:
         return [-1, -1]
